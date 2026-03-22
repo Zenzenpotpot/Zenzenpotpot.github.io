@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System – Zenzenpotpot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .project-header {
+            background: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .project-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .content {
+            padding: 2rem 0;
+        }
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+        .section h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3498db;
+            padding-left: 0.75rem;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .tech-badge {
+            background: #ecf0f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .screenshot {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .screenshot img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .project-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zenzenpotpot</h1>
+            <p>Developer Portfolio</p>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="grading-system.html">Grading System</a>
+                <a href="attendance-system.html">Attendance System</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project-header">
+        <div class="container">
+            <h2>📊 Automated Grading System</h2>
+            <p>VB.NET desktop application for grade management and reporting</p>
+        </div>
+    </div>
+
+    <div class="content container">
+        <!-- Overview -->
+        <div class="section">
+            <h3>📌 Overview</h3>
+            <p>A complete desktop application built with VB.NET that allows teachers to manage student grades, compute averages, generate report cards, and export data to Excel. It eliminates manual calculation errors and saves hours of administrative work.</p>
+        </div>
+
+        <!-- Problem -->
+        <div class="section">
+            <h3>⚠️ Problem it Solves</h3>
+            <p>Teachers often spend hours manually calculating grades and preparing report cards. This system automates the entire process, providing instant results and formatted reports, reducing workload and human error.</p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section">
+            <h3>🛠️ Tech Stack</h3>
+            <div class="tech-list">
+                <span class="tech-badge">VB.NET</span>
+                <span class="tech-badge">SQL Server</span>
+                <span class="tech-badge">Crystal Reports</span>
+                <span class="tech-badge">Windows Forms</span>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h3>✨ Key Features</h3>
+            <ul>
+                <li>Add, edit, and delete student records</li>
+                <li>Input scores per subject with flexible grading periods</li>
+                <li>Automatic grade computation (weighted average, transmutation)</li>
+                <li>Generate printable report cards (PDF)</li>
+                <li>Export data to Excel for further analysis</li>
+                <li>User authentication for teachers and admin</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="section">
+            <h3>📸 Screenshots</h3>
+            <div class="screenshot">
+                <img src="../images/grading/dashboard.png" alt="Dashboard">
+                <p><em>Dashboard overview</em></p>
+            </div>
+            <div class="screenshot">
+                <img src="../images/grading/grade-entry.png" alt="Grade Entry">
+                <p><em>Grade entry interface</em></p>
+            </div>
+            <!-- Add more screenshots as needed -->
+        </div>
+
+        <!-- Demo Video -->
+        <div class="section">
+            <h3>🎥 Demo Video</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p><em>Replace the video ID with your own YouTube video link.</em></p>
+        </div>
+
+        <!-- Architecture Diagram (optional) -->
+        <div class="section">
+            <h3>📐 Architecture Diagram</h3>
+            <div class="screenshot">
+                <img src="../images/grading/diagram.png" alt="System Architecture">
+            </div>
+            <p><em>High‑level overview of how the application interacts with the database.</em></p>
+        </div>
+
+        <!-- Code Snippet -->
+        <div class="section">
+            <h3>💻 Code Snippet</h3>
+            <p>Example function that computes the average of scores:</p>
+            <pre><code>Public Function ComputeAverage(scores As List(Of Double)) As Double
+    If scores.Count = 0 Then Return 0
+    Return scores.Sum() / scores.Count
+End Function</code></pre>
+        </div>
+
+        <!-- Challenges -->
+        <div class="section">
+            <h3>🧩 Challenges & Solutions</h3>
+            <p><strong>Challenge:</strong> Integrating Crystal Reports with VB.NET caused version compatibility issues.<br>
+            <strong>Solution:</strong> Installed the correct Crystal Reports runtime and referenced the proper DLLs to ensure seamless report generation.</p>
+            <p><strong>Challenge:</strong> Handling large datasets efficiently.<br>
+            <strong>Solution:</strong> Used stored procedures and optimized SQL queries to minimize load times.</p>
+        </div>
+
+        <!-- Lessons Learned -->
+        <div class="section">
+            <h3>📖 What I Learned</h3>
+            <ul>
+                <li>Database normalization and writing efficient SQL queries</li>
+                <li>Event‑driven programming with VB.NET</li>
+                <li>Designing user‑friendly interfaces for non‑technical users</li>
+                <li>Deploying a desktop application with installer</li>
+            </ul>
+        </div>
+
+        <!-- Code Availability -->
+        <div class="section">
+            <h3>🔒 Code Availability</h3>
+            <p>Full source code is available upon request. Please <a href="mailto:your.email@example.com">contact me</a> for details.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zenzenpotpot. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
