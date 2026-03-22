@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenzenpotpot – Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: #ecf0f1;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .projects {
+            padding: 2rem 0;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .project-card p {
+            margin: 1rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zenzenpotpot</h1>
+            <p>Developer | VB.NET & Arduino Enthusiast</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects/grading-system.html">Grading System</a>
+                <a href="projects/attendance-system.html">Attendance System</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Hi, I'm Zenzenpotpot</h2>
+            <p>I'm a 17‑year‑old developer who loves building practical solutions. From desktop applications to hardware‑integrated systems, I enjoy turning ideas into working products.</p>
+        </div>
+    </section>
+
+    <section class="projects container">
+        <h2>Featured Projects</h2>
+        <div class="project-card">
+            <h3>📊 Automated Grading System (VB.NET)</h3>
+            <p>A desktop application that automates grade calculation, report generation, and data export for teachers. Built with VB.NET and SQL Server.</p>
+            <a href="projects/grading-system.html" class="btn">View Project →</a>
+        </div>
+        <div class="project-card">
+            <h3>🔐 Smart Attendance System (Arduino + VB.NET)</h3>
+            <p>Hardware‑integrated system using RFID, fingerprint sensor, and SMS alerts. Ensures accurate attendance and real‑time parent notifications.</p>
+            <a href="projects/attendance-system.html" class="btn">View Project →</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zenzenpotpot. Built with 💻 and ☕.</p>
+            <p>Contact: <a href="mailto:your.email@example.com" style="color:#fff;">your.email@example.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
